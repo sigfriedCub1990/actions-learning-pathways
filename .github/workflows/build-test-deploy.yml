@@ -50,7 +50,7 @@ jobs:
           node-version: 18
           
       - name: configure github pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v3
         with:
           static_site_generator: next
           
@@ -65,5 +65,3 @@ jobs:
       - name: deploy
         id: deployment
         uses: actions/deploy-pages@v1
-      
-        
